@@ -1,8 +1,3 @@
-/* ============================================================
-   GUST.dev portfolio — generated from Figma design
-   Fonts: Outfit (headings) + Manrope (body)
-   ============================================================ */
-
 :root {
   --ink: #2d3250;
   --body-text: #424874;
@@ -29,9 +24,7 @@
 
 * { box-sizing: border-box; }
 
-/* Full-bleed sections keep their background/border edge-to-edge; the
-   content itself is capped at 1440px and centered so the layout stays
-   balanced on wide monitors instead of stretching corner to corner. */
+
 .wrap {
   max-width: 1440px;
   margin: 0 auto;
@@ -403,10 +396,27 @@ img { max-width: 100%; display: block; }
   justify-content: space-between;
 }
 
-.site-footer p {
+.footer-contact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-contact a {
   margin: 0;
-  font-size: 24px;
+  font-size: 18px;
+  font-family: var(--font-body);
+  font-weight: 700;
   color: var(--body-text);
+  text-decoration: none;
+}
+
+.footer-contact a:hover { text-decoration: underline; }
+
+.footer-dot {
+  color: var(--body-text);
+  opacity: .5;
 }
 
 /* ================= RESPONSIVE ================= */
